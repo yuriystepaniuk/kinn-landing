@@ -8,7 +8,7 @@
 }
 
 body, a, h2, h3, h4 {
-  color: #777a58;
+  color: #56593D;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   letter-spacing: 1.58px;
@@ -75,7 +75,7 @@ nav .nav-block {
   line-height: 25px;
 }
 .menu li a:hover {
-  border-bottom: 2px solid #777a58;
+  border-bottom: 2px solid #56593D;
 }
 
 .menu img, .link-option img, .footer-menu img {
@@ -113,10 +113,37 @@ nav .nav-block {
 }
 
 /* main */
+.slider {
+  position: relative;
+}
+.slider .slider-info {
+  position: absolute;
+  text-align: right;
+  right: 80px;
+  bottom: 80px;
+}
 .slider img {
   height: auto;
   width: 100%;
   border: 16px solid #FFFFEF;
+}
+.slider h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.slider h2 {
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.slider button {
+  background-color: #56593D;
+  color: #FFFFEF;
+  padding: 16px 25px 17px 25px;
+  border: none;
+  font-size: 16px;
+}
+.slider button:hover {
+  background-color: #464830;
 }
 
 .content {
@@ -134,7 +161,7 @@ nav .nav-block {
   font-size: 16px;
 }
 .link-option ul a:hover {
-  border-bottom: 1px solid #777a58;
+  border-bottom: 1px solid #56593D;
 }
 
 .maple-board-block {
@@ -177,10 +204,30 @@ nav .nav-block {
 }
 
 .frame {
+  position: relative;
+  text-align: center;
   margin-top: 23px;
 }
+.frame .frame-text {
+  position: absolute;
+  top: 78px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.frame .frame-text h2 {
+  font-size: 50px;
+  line-height: 60px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+.frame .frame-text h3 {
+  padding-top: 11px;
+  font-size: 17px;
+  line-height: 21px;
+  letter-spacing: 1.8px;
+}
 .frame img {
-  height: auto;
   width: 100%;
   border: 16px solid #FFFFEF;
 }
@@ -211,7 +258,7 @@ nav .nav-block {
   display: block;
   width: 40px;
   height: 1px;
-  background-color: #777a58;
+  background-color: #56593D;
 }
 .info-content .info-content-text {
   font-family: "Jost", sans-serif;
@@ -240,14 +287,14 @@ nav .nav-block {
   text-align: center;
   height: 20px;
   outline: none;
-  color: #777a58;
+  color: #56593D;
   font-size: 14px;
   letter-spacing: 1.2px;
 }
 .info-content button {
   height: 22px;
   width: 144px;
-  background-color: #777a58;
+  background-color: #56593D;
   color: #FFFFEF;
   border: none;
   text-transform: uppercase;
@@ -255,7 +302,7 @@ nav .nav-block {
   font-size: 14px;
 }
 .info-content button:hover {
-  background-color: #56593D;
+  background-color: #464830;
 }
 
 .right-img {
@@ -325,4 +372,8 @@ nav .nav-block {
   display: flex;
   align-items: flex-end;
   gap: 20px;
+}
+.footer .block-end img {
+  width: 24px;
+  height: 24px;
 }/*# sourceMappingURL=style.css.map */

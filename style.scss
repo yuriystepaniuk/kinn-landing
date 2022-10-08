@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap');
 $main-color:  #FFFFEF;
-$text-color: #777a58;
+$text-color: #56593D;
+$button-hover: #464830;
 
 * {
     box-sizing: border-box;
@@ -112,13 +113,38 @@ nav {
 }
 
 /* main */
-
-.slider img {
-    height: auto;
-    width: 100%;
-    border: 16px solid $main-color;
+.slider {
+    position: relative;
+    .slider-info {
+        position: absolute;
+        text-align: right;
+        right: 80px;
+        bottom:80px
+    }
+    img {
+        height: auto;
+        width: 100%;
+        border: 16px solid $main-color;
+    }
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+    button {
+        background-color: $text-color;
+        color:$main-color;
+        padding: 16px 25px 17px 25px;
+        border: none;
+        font-size: 16px;
+        &:hover {
+            background-color:$button-hover ;
+        }
+    }
 }
-
 .content {
     margin: 90px;
     font-size: 57px;
@@ -180,9 +206,30 @@ nav {
     background-color: $main-color;
 }
 .frame{
+    position: relative;
+    text-align: center;
+    .frame-text {
+        position: absolute;
+        top:78px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        // transform: translate(-50%, -100%);
+        h2 {
+            font-size: 50px;
+            line-height: 60px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        h3 {
+            padding-top: 11px;
+            font-size: 17px;
+            line-height: 21px;
+            letter-spacing: 1.8px;
+        }
+    }
     margin-top: 23px;
     img {
-        height: auto;
         width: 100%;
         border: 16px solid $main-color;
     }
@@ -259,7 +306,7 @@ nav {
         letter-spacing: 1.2px;
         font-size: 14px;
         &:hover {
-            background-color: #56593D;
+            background-color:$button-hover;
         }
     }
 }
@@ -289,7 +336,7 @@ nav {
     height: 382px;
     margin-top: 90px;
     h3 {
-        color:$main-color;
+        color: $main-color;
     }
     .block {
         display: flex;
@@ -316,7 +363,7 @@ nav {
         display: block;
         width: 40px;
         height: 1px;
-        background-color:$main-color;
+        background-color: $main-color;
     }
     .footer-menu {
         margin-top: -8px;
@@ -331,6 +378,10 @@ nav {
         display: flex;
         align-items: flex-end;
         gap:20px;
+        }
+        img {
+            width: 24px;
+            height: 24px;
         }
  }
 }
