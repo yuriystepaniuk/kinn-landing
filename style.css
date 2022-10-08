@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body, a, h2, h3, h4 {
+  color: #777a58;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.58px;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.col-7 {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+}
+
+.col-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.container {
+  margin: 8px;
+}
+.container .yellow-line {
+  display: block;
+  width: 100%;
+  height: 16px;
+  background: #FFFFEF;
+}
+
+.content-container {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+nav {
+  position: relative;
+  max-height: 100px;
+  line-height: 100px;
+}
+nav .nav-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+.menu li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+.menu li a:hover {
+  border-bottom: 2px solid #777a58;
+}
+
+.menu img, .link-option img, .footer-menu img {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  margin-bottom: -1px;
+}
+
+.icons-panel {
+  padding-top: 8px;
+}
+.icons-panel a {
+  margin-left: 20px;
+}
+.icons-panel a img:hover {
+  width: 32.5px;
+  height: 32.5px;
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0px;
+  top: 0px;
+  z-index: -1;
+}
+.logo a {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  flex-wrap: wrap;
+}
+
+/* main */
+.slider img {
+  height: auto;
+  width: 100%;
+  border: 16px solid #FFFFEF;
+}
+
+.content {
+  margin: 90px;
+  font-size: 57px;
+  text-align: center;
+}
+
+.link-option ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.link-option ul a {
+  font-size: 16px;
+}
+.link-option ul a:hover {
+  border-bottom: 1px solid #777a58;
+}
+
+.maple-board-block {
+  display: block;
+  width: auto;
+  background-color: #FFFFEF;
+}
+.maple-board-block h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 63px 0 80px 0;
+}
+.maple-board-block .maple-board {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 32px;
+}
+.maple-board-block .maple-board .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.maple-board-block .maple-board .item .item-name {
+  margin: 15px 0;
+}
+.maple-board-block .maple-board .item .price {
+  letter-spacing: 1.62px;
+  line-height: 26px;
+}
+
+.row {
+  display: flex;
+  padding: 64px 32px;
+  margin-top: 23px;
+}
+
+.story, .subscribe, .kinn-moments {
+  background-color: #FFFFEF;
+}
+
+.frame {
+  margin-top: 23px;
+}
+.frame img {
+  height: auto;
+  width: 100%;
+  border: 16px solid #FFFFEF;
+}
+
+.col-7 img {
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+}
+
+.info-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto 87px;
+}
+.info-content .info-content-header {
+  margin-top: 63px;
+  font-size: 29px;
+  letter-spacing: 0;
+}
+.info-content .info-content-symbol {
+  margin: 32px auto;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #777a58;
+}
+.info-content .info-content-text {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  line-height: 33px;
+  letter-spacing: 0;
+}
+.info-content .subscribe-content-header {
+  font-size: 29px;
+  line-height: 38px;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+}
+.info-content .subscribe-content-text {
+  font-family: "Jost", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  margin-bottom: 46px;
+}
+.info-content input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 340px;
+  background-color: #FFFFEF;
+  text-align: center;
+  height: 20px;
+  outline: none;
+  color: #777a58;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+}
+.info-content button {
+  height: 22px;
+  width: 144px;
+  background-color: #777a58;
+  color: #FFFFEF;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+}
+.info-content button:hover {
+  background-color: #56593D;
+}
+
+.right-img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kinn-moments h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.kinn-moments-img {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.footer {
+  min-width: 100%;
+  background: #56593D;
+  height: 382px;
+  margin-top: 90px;
+}
+.footer h3 {
+  color: #FFFFEF;
+}
+.footer .block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #FFFFEF;
+  font-size: 16px;
+  line-height: 25px;
+}
+.footer .block p {
+  padding-right: 80px;
+  letter-spacing: 0;
+}
+.footer .block a {
+  color: #FFFFEF;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.footer .block a:hover {
+  border-bottom: 1px solid #FFFFEF;
+}
+.footer .footer-content-symbol {
+  margin: 32px 0;
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: #FFFFEF;
+}
+.footer .footer-menu {
+  margin-top: -8px;
+}
+.footer .footer-menu li {
+  border-bottom: 1px solid #56593D;
+}
+.footer .block-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer .block-end ul {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}/*# sourceMappingURL=style.css.map */
