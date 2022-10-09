@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+				
     <title>Kinn</title>
 </head>
 <body>
@@ -37,7 +40,11 @@
         <div class="container">
             <div class="content-container">
                 <div class="slider">
-                    <img src="img/slider1.png" alt="">
+                    <div class="img-slider">
+                        <div><img src="img/slider1.png" alt=""></div>
+                        <div><img src="img/slider2.jpg" alt=""></div>
+                        <div><img src="img/slider3.jpeg" alt=""></div>
+                    </div>
                     <div class="slider-info">
                         <h3>ALL COLLECTIONS</h3>
                         <h2>Elevate Your Everyday</h2>
@@ -175,9 +182,9 @@
                     <div class="footer-content-symbol"></div>
                     <ul class="footer-menu">
                         <li><a href="#">SHOP<img src="img/arrow-down-yellow.png" alt=""></a></li> 
-                        <li><a href="#">STYLE QUIZ</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">STORIES<img src="img/arrow-down-yellow.png" alt=""></a></li>
+                        <li><a href="#style-quiz">STYLE QUIZ</a></li>
+                        <li><a href="#abous-us">ABOUT US</a></li>
+                        <li><a href="#stories">STORIES<img src="img/arrow-down-yellow.png" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -186,19 +193,19 @@
                     <h3>HELP</h3>
                     <div class="footer-content-symbol"></div>
                     <ul class="footer-menu">
-                        <li><a href="#">FAQs + Shipping</li> 
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Terms</a></li>
-                        <li><a href="#">Trade</a></li>
+                        <li><a href="#faqs">FAQs + Shipping</li> 
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#trade">Trade</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-4">
                 <div class="block-end">
                     <ul>
-                        <li><a href=""><img src="img/fb.png" alt="facebook"></a></li>
-                        <li><a href=""><img src="img/pinterest.png" alt="pinterest"></a></li>
-                        <li><a href=""><img src="img/instagram.png" alt="instagram"></a></li>
+                        <li><a href="#facebook"><img src="img/fb.png" alt="facebook"></a></li>
+                        <li><a href="#pinterst"><img src="img/pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="#instagram"><img src="img/instagram.png" alt="instagram"></a></li>
                     </ul>
                 </div>
             </div>
@@ -206,5 +213,9 @@
     </div>
 </footer>
 <!-- footer end --> 
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

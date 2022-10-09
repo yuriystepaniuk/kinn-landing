@@ -115,16 +115,26 @@ nav {
 /* main */
 .slider {
     position: relative;
+    .slider1:focus {
+        h3 {
+            color:white;
+        }
+    }
     .slider-info {
         position: absolute;
         text-align: right;
         right: 80px;
         bottom:80px
     }
-    img {
+    .img-slider {
         height: auto;
         width: 100%;
         border: 16px solid $main-color;
+        img {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
     }
     h3 {
         font-size: 18px;
@@ -140,6 +150,7 @@ nav {
         padding: 16px 25px 17px 25px;
         border: none;
         font-size: 16px;
+        cursor: pointer;
         &:hover {
             background-color:$button-hover ;
         }

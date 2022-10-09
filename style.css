@@ -116,16 +116,24 @@ nav .nav-block {
 .slider {
   position: relative;
 }
+.slider .slider1:focus h3 {
+  color: white;
+}
 .slider .slider-info {
   position: absolute;
   text-align: right;
   right: 80px;
   bottom: 80px;
 }
-.slider img {
+.slider .img-slider {
   height: auto;
   width: 100%;
   border: 16px solid #FFFFEF;
+}
+.slider .img-slider img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .slider h3 {
   font-size: 18px;
@@ -141,6 +149,7 @@ nav .nav-block {
   padding: 16px 25px 17px 25px;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 .slider button:hover {
   background-color: #464830;
