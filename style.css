@@ -143,7 +143,7 @@ nav .nav-block {
   font-size: 45px;
   margin-bottom: 25px;
 }
-.slider button {
+.slider .btn {
   background-color: #56593D;
   color: #FFFFEF;
   padding: 16px 25px 17px 25px;
@@ -151,7 +151,7 @@ nav .nav-block {
   font-size: 16px;
   cursor: pointer;
 }
-.slider button:hover {
+.slider .btn:hover {
   background-color: #464830;
 }
 

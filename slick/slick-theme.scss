@@ -51,8 +51,8 @@ $slick-opacity-not-active: 0.25 !default;
 @if $slick-font-family == "slick" {
     @font-face {
         font-family: "slick";
-        src: slick-font-url("slick.eot");
-        src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
+        // src: slick-font-url("slick.eot");
+        // src: slick-font-url("slick.eot?#iefix") format("embedded-opentype"), slick-font-url("slick.woff") format("woff"), slick-font-url("slick.ttf") format("truetype"), slick-font-url("slick.svg#slick") format("svg");
         font-weight: normal;
         font-style: normal;
     }
@@ -64,10 +64,12 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    padding-right: 10px;
+    height: 100%;
+    width: 90px;
     line-height: 0px;
     font-size: 0px;
+    z-index: 100;
     cursor: pointer;
     background: transparent;
     color: transparent;
@@ -78,9 +80,8 @@ $slick-opacity-not-active: 0.25 !default;
     padding: 0;
     border: none;
     outline: none;
-    &:hover, &:focus {
+    &:focus {
         outline: none;
-        background: transparent;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
@@ -102,9 +103,15 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-prev {
     left: -25px;
+    &:hover {
+        outline: none;
+        background: rgb(255,255,255,0.4);
+        color: transparent;
+    }
     [dir="rtl"] & {
         left: auto;
         right: -25px;
+        z-index: 10; 
     }
     &:before {
         content: $slick-prev-character;
@@ -116,6 +123,12 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-next {
     right: -25px;
+    z-index: 100;
+    &:hover {
+        outline: none;
+        background: rgb(255,255,255,0.4);
+        color: transparent;
+    }
     [dir="rtl"] & {
         left: -25px;
         right: auto;
@@ -153,6 +166,7 @@ $slick-opacity-not-active: 0.25 !default;
         cursor: pointer;
         button {
             border: 0;
+            background-color: black;
             background: transparent;
             display: block;
             height: 20px;
