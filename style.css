@@ -385,4 +385,31 @@ nav .nav-block {
 .footer .block-end img {
   width: 24px;
   height: 24px;
+}
+
+@media (min-width: 1199px) and (max-width: 1440px) {
+  .menu {
+    display: flex;
+    gap: 25px;
+  }
+  .menu li a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .menu li a:hover {
+    border-bottom: 2px solid #56593D;
+  }
+  .maple-board {
+    gap: 32px;
+  }
+  .maple-board img {
+    max-width: 90%;
+  }
+  .frame .frame-text h2 {
+    font-size: 44px;
+  }
+  .kinn-moments img {
+    max-width: 90%;
+  }
 }/*# sourceMappingURL=style.css.map */
