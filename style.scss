@@ -313,6 +313,7 @@ nav {
         text-transform: uppercase;
         letter-spacing: 1.2px;
         font-size: 14px;
+        margin-left:10px;
         &:hover {
             background-color:$button-hover;
         }
@@ -618,6 +619,7 @@ nav {
     nav .nav-block {
         justify-content: flex-end;
         padding: 0;
+        margin-top:-40px;
     }
     nav {
         position: relative;
@@ -629,7 +631,7 @@ nav {
         }
         .logo {
             text-align: left ;
-            left:42px;
+            left:60px;
             top:30px;
         }
         .icons-panel {
@@ -653,6 +655,36 @@ nav {
     .menu {
         visibility: hidden;
         opacity: 0;
+    }
+    // burger menu 
+    .nav-mobile-menu {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top:22px;
+        right: 0;
+        margin-left: 10px;
+        background-color: $main-color;
+    
+        span {
+          height: 2px;
+          background-color: rgb(49, 43, 9, 0.9);
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 5px;
+          transition: .25s ease-in-out;
+    
+          &:nth-child(1) {
+            top:1px;
+          }
+          &:nth-child(2) {
+            top:8px;
+          }
+          &:nth-child(3) {
+            bottom: 3px;
+          }
+        }
     }
     .slider {
         .slider-info {
@@ -818,5 +850,31 @@ nav {
                 align-items: center;
             }
         }
+    }
+}
+@media (max-width:320px) {
+    .content {
+        p {
+            font-size: 14px;
+        }
+    }
+    .frame {
+        .frame-text {
+            h2, h3 {
+                font-size: 16px;
+                line-height: 16px;
+                padding: 0;
+                padding-top:10px;
+            }
+        }
+    }
+    .story {
+        .row {
+            padding:0;
+            padding-top:20px;
+        }
+    }
+    .logo {
+        display: none;
     }
 }

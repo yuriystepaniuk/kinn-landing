@@ -305,6 +305,7 @@ nav .nav-block {
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 14px;
+  margin-left: 10px;
 }
 .info-content button:hover {
   background-color: #464830;
@@ -567,6 +568,7 @@ nav .nav-block {
   nav .nav-block {
     justify-content: flex-end;
     padding: 0;
+    margin-top: -40px;
   }
   nav {
     position: relative;
@@ -579,7 +581,7 @@ nav .nav-block {
   }
   nav .logo {
     text-align: left;
-    left: 42px;
+    left: 60px;
     top: 30px;
   }
   nav .icons-panel {
@@ -602,6 +604,33 @@ nav .nav-block {
   .menu {
     visibility: hidden;
     opacity: 0;
+  }
+  .nav-mobile-menu {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 22px;
+    right: 0;
+    margin-left: 10px;
+    background-color: #fcfccc;
+  }
+  .nav-mobile-menu span {
+    height: 2px;
+    background-color: rgba(49, 43, 9, 0.9);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 5px;
+    transition: 0.25s ease-in-out;
+  }
+  .nav-mobile-menu span:nth-child(1) {
+    top: 1px;
+  }
+  .nav-mobile-menu span:nth-child(2) {
+    top: 8px;
+  }
+  .nav-mobile-menu span:nth-child(3) {
+    bottom: 3px;
   }
   .slider .slider-info {
     position: absolute;
@@ -737,5 +766,23 @@ nav .nav-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 320px) {
+  .content p {
+    font-size: 14px;
+  }
+  .frame .frame-text h2, .frame .frame-text h3 {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .story .row {
+    padding: 0;
+    padding-top: 20px;
+  }
+  .logo {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
