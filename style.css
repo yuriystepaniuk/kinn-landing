@@ -559,11 +559,20 @@ nav .nav-block {
   }
 }
 @media (max-width: 767.98px) {
+  .body-selector {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
   .content-container {
     margin: 0;
   }
   .container .yellow-line {
-    height: 8px;
+    height: 4px;
   }
   nav .nav-block {
     justify-content: flex-end;
@@ -601,10 +610,6 @@ nav .nav-block {
   .icons-panel {
     display: flex;
   }
-  .menu {
-    visibility: hidden;
-    opacity: 0;
-  }
   .nav-mobile-menu {
     width: 30px;
     height: 30px;
@@ -613,6 +618,7 @@ nav .nav-block {
     right: 0;
     margin-left: 10px;
     background-color: #fcfccc;
+    z-index: 10;
   }
   .nav-mobile-menu span {
     height: 2px;
@@ -632,6 +638,61 @@ nav .nav-block {
   .nav-mobile-menu span:nth-child(3) {
     bottom: 3px;
   }
+  .nav-mobile-menu.active-menu {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+  .nav-mobile-menu.active-menu span {
+    margin-top: -1px;
+  }
+  .nav-mobile-menu.active-menu span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(2) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .nav-mobile-menu.active-menu span:nth-child(3) {
+    transform: scale(0);
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 280px;
+    width: 300px;
+    transform: translateX(150%);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu li {
+    margin-top: 15px;
+  }
+  .menu.active-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    line-height: 12px;
+    z-index: 150;
+    gap: 0;
+  }
+  .menu.active-menu ul {
+    flex-direction: column !important;
+  }
+  .menu.active-menu ul li {
+    margin: 0;
+    padding: 0;
+  }
+  .menu.active-menu ul li a {
+    font-size: 12px;
+  }
   .slider .slider-info {
     position: absolute;
     text-align: center;
@@ -643,7 +704,7 @@ nav .nav-block {
   .slider .img-slider {
     height: auto;
     width: 100%;
-    border: 8px solid #fcfccc;
+    border: 0px solid #fcfccc;
   }
   .slider .img-slider img {
     height: auto;
@@ -784,5 +845,10 @@ nav .nav-block {
   }
   .logo {
     display: none;
+  }
+  .nav-mobile-menu {
+    z-index: 1000;
+    top: 5px;
+    left: -5px;
   }
 }/*# sourceMappingURL=style.css.map */
