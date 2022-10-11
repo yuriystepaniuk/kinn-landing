@@ -968,31 +968,28 @@ nav {
             padding: 0;
         }
     }
-}
-nav {
-    .sub-menu {
-        display: none;
-        z-index: 1000;
-        position: absolute;
-        color: $text-color;
-        padding:10px 40px 20px 40px;
-        margin-left: -25px;
-        background-color: rgb(255, 255, 255,0.86);
-        text-align: left;
-        &:last-child {
-            margin-left: -18px;
-        }
-        ul{
-            li {
-                padding: 10px !important;
+    nav {
+        .sub-menu {
+            display: none;
+            z-index: 1000;
+            position: absolute;
+            color: $text-color;
+            padding:10px 40px 20px 40px;
+            margin-left: -25px;
+            background-color: rgb(255, 255, 255,0.86);
+            text-align: left;
+            &:last-child {
+                margin-left: -18px;
+            }
+            ul{
+                li {
+                    padding: 10px !important;
+                }
             }
         }
-    }
-    .menu li:hover .sub-menu{
-        display: block;
-        border-bottom: 8px solid $main-color;
-        border-left: 2px solid $main-color;
-        border-right: 2px solid $main-color;
+        .menu li:hover .sub-menu{
+            display: block;
+        }
     }
 }
 @media(min-width:768px) {
@@ -1006,27 +1003,30 @@ nav {
             padding: 0;
         }
     }
-}
-nav {
-    .sub-menu {
-        display: none;
-        z-index: 1000;
-        position: absolute;
-        color: $text-color;
-        padding:10px 16px 20px 16px;
-        margin-left: -12px;
-        background-color: rgba(249, 249, 249, 0.95);
-        text-align: left;
-        &:last-child {
-            margin-left: -6px;
-        }
-        ul{
-            li {
-                padding: 10px !important;
+    nav {
+        .sub-menu {
+            display: none;
+            z-index: 1000;
+            position: absolute;
+            color: $text-color;
+            padding:10px 16px 20px 16px;
+            margin-left: -12px;
+            background-color: rgba(249, 249, 249, 0.95);
+            text-align: left;
+            &:last-child {
+                margin-left: -6px;
+            }
+            ul{
+                li {
+                    padding: 10px !important;
+                }
             }
         }
-    }
-    .menu li:hover .sub-menu{
-        display: block;
+        .menu li:hover .sub-menu{
+            display: block;
+            border-bottom: 8px solid $main-color;
+            border-left: 2px solid $main-color;
+            border-right: 2px solid $main-color;
+        }
     }
 }

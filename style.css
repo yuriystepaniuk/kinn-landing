@@ -866,30 +866,26 @@ nav .nav-block {
     margin: 0;
     padding: 0;
   }
+  nav .sub-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    color: #56593D;
+    padding: 10px 40px 20px 40px;
+    margin-left: -25px;
+    background-color: rgba(255, 255, 255, 0.86);
+    text-align: left;
+  }
+  nav .sub-menu:last-child {
+    margin-left: -18px;
+  }
+  nav .sub-menu ul li {
+    padding: 10px !important;
+  }
+  nav .menu li:hover .sub-menu {
+    display: block;
+  }
 }
-nav .sub-menu {
-  display: none;
-  z-index: 1000;
-  position: absolute;
-  color: #56593D;
-  padding: 10px 40px 20px 40px;
-  margin-left: -25px;
-  background-color: rgba(255, 255, 255, 0.86);
-  text-align: left;
-}
-nav .sub-menu:last-child {
-  margin-left: -18px;
-}
-nav .sub-menu ul li {
-  padding: 10px !important;
-}
-nav .menu li:hover .sub-menu {
-  display: block;
-  border-bottom: 8px solid #fcfccc;
-  border-left: 2px solid #fcfccc;
-  border-right: 2px solid #fcfccc;
-}
-
 @media (min-width: 768px) {
   nav {
     position: relative;
@@ -901,23 +897,26 @@ nav .menu li:hover .sub-menu {
     margin: 0;
     padding: 0;
   }
-}
-nav .sub-menu {
-  display: none;
-  z-index: 1000;
-  position: absolute;
-  color: #56593D;
-  padding: 10px 16px 20px 16px;
-  margin-left: -12px;
-  background-color: rgba(249, 249, 249, 0.95);
-  text-align: left;
-}
-nav .sub-menu:last-child {
-  margin-left: -6px;
-}
-nav .sub-menu ul li {
-  padding: 10px !important;
-}
-nav .menu li:hover .sub-menu {
-  display: block;
+  nav .sub-menu {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    color: #56593D;
+    padding: 10px 16px 20px 16px;
+    margin-left: -12px;
+    background-color: rgba(249, 249, 249, 0.95);
+    text-align: left;
+  }
+  nav .sub-menu:last-child {
+    margin-left: -6px;
+  }
+  nav .sub-menu ul li {
+    padding: 10px !important;
+  }
+  nav .menu li:hover .sub-menu {
+    display: block;
+    border-bottom: 8px solid #fcfccc;
+    border-left: 2px solid #fcfccc;
+    border-right: 2px solid #fcfccc;
+  }
 }/*# sourceMappingURL=style.css.map */
